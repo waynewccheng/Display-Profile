@@ -1,0 +1,13 @@
+Measurement Date:09-08-2012_0625
+Brand: Sony
+Type: PVM-2551MD
+Size: 25 inch
+Resolution: 1920x1080
+Frequency: 60Hz
+Preset(Color Temperature):
+Red Gain:
+Green Gain:
+Blue Gain:
+Brightness:
+Contrast:
+Gamma: 

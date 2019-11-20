@@ -1,0 +1,13 @@
+Measurement Date:08-02-2013_0701
+Brand: NEC
+Type: PA271W
+Size: 27 inch
+Resolution: 2560x1440
+Frequency: 60Hz
+Preset(Color Temperature):sRGB(7700K)
+Red Gain:
+Green Gain:
+Blue Gain:
+Brightness:160 cd/m^2
+Contrast:Brightness/Black(MIN)
+Gamma: 

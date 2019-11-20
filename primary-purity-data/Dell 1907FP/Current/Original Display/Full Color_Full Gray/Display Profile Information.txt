@@ -1,0 +1,13 @@
+Measurement Date:07-31-2013_0614
+Brand: Dell
+Type: 1907FP
+Size: 19 inch
+Resolution: 1280x1024
+Frequency: 60Hz
+Preset(Color Temperature):User Preset
+Red Gain:100
+Green Gain:100
+Blue Gain:100
+Brightness:100
+Contrast:100
+Gamma: 

@@ -1,0 +1,13 @@
+Measurement Date:08-01-2013_0735
+Brand: Apple
+Type: M9179LL/A
+Size: 30 inch
+Resolution: 2560x1600
+Frequency: 60Hz
+Preset(Color Temperature):
+Red Gain:
+Green Gain:
+Blue Gain:
+Brightness:
+Contrast:
+Gamma: 

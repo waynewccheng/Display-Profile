@@ -1,0 +1,13 @@
+Measurement Date:08-21-2012_1155
+Brand: Dell
+Type: P2212Hb
+Size: 22 inch
+Resolution: 1920x1080
+Frequency: 60Hz
+Preset(Color Temperature):
+Red Gain:
+Green Gain:
+Blue Gain:
+Brightness:
+Contrast:
+Gamma: 

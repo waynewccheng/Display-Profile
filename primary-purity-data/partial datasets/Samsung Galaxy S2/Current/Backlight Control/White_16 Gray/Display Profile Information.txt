@@ -1,0 +1,6 @@
+Measurement Date:12-10-2012
+Brand: Samsung
+Type: Galaxy SII
+Size: 4.3 inch Super AMOLED
+Resolution: 480x800
+Brightness: 25/50/75/100

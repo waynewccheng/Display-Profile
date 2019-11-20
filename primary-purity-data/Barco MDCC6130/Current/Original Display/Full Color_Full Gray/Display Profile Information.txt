@@ -1,0 +1,14 @@
+Measurement Date:10-05-2012_1638
+Brand: Barco
+Type: MDCC-6130
+Size: 30 inch
+Resolution: 3280x2048
+Frequency: 60Hz
+Preset(Color Target):Native White
+Red Gain: None
+Green Gain: None
+Blue Gain: None
+Brightness: 400 cd/m^2
+Contrast: None
+Gamma: 2.2
+Viewing Mode: Diagnostic

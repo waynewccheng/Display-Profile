@@ -1,0 +1,13 @@
+Measurement Date:08-01-2013_0530
+Brand: EIZO
+Type: CG243W
+Size: 24 inch
+Resolution: 1920x1600
+Frequency: 60Hz
+Preset(Color Temperature):Custom(6500K)
+Red Gain:100
+Green Gain:85
+Blue Gain:94
+Brightness:100
+Contrast:100
+Gamma: 2.2
