@@ -1,0 +1,13 @@
+Measurement Date:08-01-2013_1156
+Brand: Samsung
+Type: 910T
+Size: 19 inch
+Resolution: 1280x1024
+Frequency: 60Hz
+Preset(Color Temperature):Normal
+Red Gain:50
+Green Gain:50
+Blue Gain:50
+Brightness:82
+Contrast:80
+Gamma: Model

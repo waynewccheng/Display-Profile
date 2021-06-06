@@ -1,0 +1,6 @@
+Measurement Date:12-10-2012
+Brand: Samsung
+Type: Galaxy SIII
+Size: 4.8 inch Super AMOLED
+Resolution: 1280x720
+Brightness: 25/50/75/100

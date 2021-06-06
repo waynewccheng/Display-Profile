@@ -1,0 +1,13 @@
+Measurement Date:07-31-2013_0759
+Brand: EIZO
+Type: Radiforce R31
+Size: 20.8 inch
+Resolution: 2048x1536
+Frequency: 60Hz
+Preset(Color Temperature):CAL
+Red Gain:
+Green Gain:
+Blue Gain:
+Brightness:112%
+Contrast:
+Gamma: CAL

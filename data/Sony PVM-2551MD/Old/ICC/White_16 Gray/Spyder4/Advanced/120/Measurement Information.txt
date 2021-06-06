@@ -1,0 +1,19 @@
+*ICC Setting
+Gamma: 2.2
+White Point: 6500K
+Target Brigthness: 120 cd/m^2
+Current Brigthness: 121 cd/m^2
+
+*Display Setting
+Format DVI: (1920x1200)
+fH: 72kHz
+fV: 60Hz
+Color Temperature: D65
+Color Space: OFF
+Flicker Free: ON
+Gamma: 2.2
+Phase: 50
+Chroma: 50
+Contrast: 100 --> 70
+Brigthness: 50 --> 17
+ 

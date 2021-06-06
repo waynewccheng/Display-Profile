@@ -1,0 +1,18 @@
+Measurement Date:06-26-2014_1200
+Brand: HP
+Type: ZR2440W
+Size: 24.06 inch AMLCD
+Resolution: 1920x1080
+Brightness: 90%
+Contrast: 80%
+Color:6500K
+Power Saver: ON
+Power onRecall: ON
+Mode display: ON
+Monitor Status:Top
+Sharpness:4
+Video OD: OFF
+Dynamic CR:OFF
+DDC/CI Support: ON
+Sleep Timer: OFF
+Custom Scaling: Fill to Screen

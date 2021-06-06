@@ -1,3 +1,6 @@
+% 6-6-2021
+% Q: cover image
+
 % 6-7-2016
 % gray tracking added
 
@@ -93,9 +96,7 @@ displayn = dnshort(1:16);
 aucabc = zeros(16,2);
 
 
-
-clf
-hold on
+if 1
 
 j = 1;
 for i = [14 19 20  2 6 11  1 16 8 9 4 15  5 17 13]
@@ -116,7 +117,8 @@ for i = [14 19 20  2 6 11  1 16 8 9 4 15  5 17 13]
     aucabc(j,1) = colorauc;
     aucabc(j,2) = grayauc;
     displayn(j) = dnshort(i);
-    
+
+    if 0
     if mod(j-1,3) == 0
         ylabel('Primary Purity')
     else
@@ -133,55 +135,78 @@ for i = [14 19 20  2 6 11  1 16 8 9 4 15  5 17 13]
     
     text(0.15,0.4,s_auc,'Interpreter','none');
     text(0.15,0.2,s_abc,'Interpreter','none');
+    end
     
     j = j+1;
 %     
     %----------------------------
 end
 
-%return
-figure
+end
+
+
+%figure
+set(gcf,'Units','Pixel','position',[200,20,1200,1200])
 
 % summary plot
 
+offset_x = -0.002;
+offset_y = -0.004;
 
 clf
 hold on
-% OLED
-for i = [1 2 3]
-    plot(aucabc(i,1),aucabc(i,2),'og')
-    text(aucabc(i,1)+0.002,aucabc(i,2)+0.001,displayn(i),'Interpreter','none')
-end
+
+% Medical
+i = [4];
+    plot(aucabc(i,1),aucabc(i,2),'MarkerSize',12,'Marker','x','LineWidth',3,'LineStyle','none')
+    mytext(text_pos(i,1),text_pos(i,2),displayn(i))
+    %mytext(aucabc(i,1)+offset_x,aucabc(i,2)+offset_y,displayn(i))
 
 % High-end
-for i = [4 5 6 8]
-    plot(aucabc(i,1),aucabc(i,2),'ob')
-    text(aucabc(i,1)+0.002,aucabc(i,2)+0.001,displayn(i),'Interpreter','none')
-end
+i = [5 6 8];
+    plot(aucabc(i,1),aucabc(i,2),'MarkerSize',12,'Marker','+','LineWidth',3,'LineStyle','none')
+    mytext(text_pos(i,1),text_pos(i,2),displayn(i))
+%    mytext(aucabc(i,1)+offset_x,aucabc(i,2)+offset_y,displayn(i))
 
 % consumer grade
-for i = [7 9 10 11 13]
-    plot(aucabc(i,1),aucabc(i,2),'or')
-    text(aucabc(i,1)+0.002,aucabc(i,2)+0.001,displayn(i),'Interpreter','none')
-end
+i = [7 9 10 11 13];
+    plot(aucabc(i,1),aucabc(i,2),'MarkerSize',11,'Marker','o','LineWidth',3,'LineStyle','none')
+    mytext(text_pos(i,1),text_pos(i,2),displayn(i))
+%    mytext(aucabc(i,1)+offset_x,aucabc(i,2)+offset_y,displayn(i))
+
+% OLED
+i = [1 2 3];
+    plot(aucabc(i,1),aucabc(i,2),'MarkerSize',12,'Marker','*','LineWidth',3,'LineStyle','none')
+    mytext(text_pos(i,1),text_pos(i,2),displayn(i))
+%    mytext(aucabc(i,1)+offset_x,aucabc(i,2)+offset_y,displayn(i))
 
 % mobile
-for i = [12]
-    plot(aucabc(i,1),aucabc(i,2),'oc')
-    text(aucabc(i,1)+0.002,aucabc(i,2)+0.001,displayn(i),'Interpreter','none')
-end
+i = [12];
+    plot(aucabc(i,1),aucabc(i,2),'MarkerSize',9,'Marker','^','LineWidth',3,'LineStyle','none')
+    mytext(text_pos(i,1),text_pos(i,2),displayn(i))
+%    mytext(aucabc(i,1)+offset_x,aucabc(i,2)+offset_y,displayn(i))
 
 % Low-end
-for i = [14 15]
-    plot(aucabc(i,1),aucabc(i,2),'om')
-    text(aucabc(i,1)+0.002,aucabc(i,2)+0.001,displayn(i),'Interpreter','none')
-end
+i = [14 15];
+    plot(aucabc(i,1),aucabc(i,2),'MarkerSize',9,'Marker','v','LineWidth',3,'LineStyle','none')
+    mytext(text_pos(i,1),text_pos(i,2),displayn(i))
+%    mytext(aucabc(i,1)+offset_x,aucabc(i,2)+offset_y,displayn(i))
 
+xlabel('Color Tracking (C_AUC)','Interpreter','none','FontWeight','bold','FontSize',14)
+ylabel('Gray Tracking (G_AUC)','Interpreter','none','FontWeight','bold','FontSize',14)
 axis([0.8 1 0.7 1])
-axis equal
-xlabel('Color Tracking (C_AUC)','Interpreter','none')
-ylabel('Gray Tracking (G_AUC)','Interpreter','none')
+%axis equal
 
+plot([0.8 1],[0.8 1],':')
+
+
+legend('Medical-grade','Professional-grade','Consumer-grade','OLED-based','Mobile LCD','Other','C_AUC=G_AUC','Interpreter','None')
+legend('FontSize',12)
+legend('Position',[0.244722268415822 0.169180683397182 0.154999996647239 0.13664595884566])
+grid
+
+
+if 1
   % stole from https://www.mathworks.com/matlabcentral/answers/94708-how-do-i-change-my-y-axis-or-x-axis-values-to-percentage-units-and-have-these-changes-reflected-on  
 % Convert y-axis values to percentage values by multiplication
      a=[cellstr(num2str(get(gca,'xtick')'*100))]; 
@@ -201,3 +226,11 @@ ylabel('Gray Tracking (G_AUC)','Interpreter','none')
      new_yticks = [char(a),pct];
 % 'Reflect the changes on the plot
      set(gca,'yticklabel',new_yticks) 
+end
+
+function mytext (x,y,str)   
+    %txt = cell2mat(str)
+    %annotation('text',x,y,'String',str)
+    text(x,y,str,'FontSize',12,'Interpreter','none')
+end
+

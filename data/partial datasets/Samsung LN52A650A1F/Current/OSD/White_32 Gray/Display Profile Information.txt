@@ -1,0 +1,13 @@
+Measurement Date:03/21~4/16-2013
+Brand: Samsung
+Type: LN52A650A1F
+Size: 52 inch
+Resolution: 1920x1080
+Frequency: 60Hz
+Preset(Color Temperature):
+Red Gain:
+Green Gain:
+Blue Gain:
+Brightness:
+Contrast:
+Gamma: 

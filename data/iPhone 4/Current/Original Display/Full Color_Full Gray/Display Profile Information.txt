@@ -1,0 +1,7 @@
+Measurement Date: 11-24-2010_1252
+Brand: Apple
+Type: iphone4
+Size: 3.5 inch
+Resolution: 960x640
+Frequency: 60Hz
+Brightness:
