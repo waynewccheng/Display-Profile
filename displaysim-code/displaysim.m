@@ -114,8 +114,9 @@ classdef displaysim < handle
             
             % construct the measurement filename
             fn = cell2mat(obj.pn(i));
-            fn2 = ['../data/' fn];
-            
+%            fn2 = ['../data/' fn];
+            fn2 = ['C:\Users\wcc\Documents\GitHub\Display-Profile\data\' fn];
+
             % load the measurement data
             load(fn2)
             %whos
