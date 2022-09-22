@@ -1,3 +1,6 @@
+% 9/22/2022
+% generate data for Craig, IEC
+
 % 7-9-2021
 % from iterator_colorgraytracking.m
 % class
@@ -115,7 +118,7 @@ classdef displaysim < handle
             % construct the measurement filename
             fn = cell2mat(obj.pn(i));
 %            fn2 = ['../data/' fn];
-            fn2 = ['C:\Users\wcc\Documents\GitHub\Display-Profile\data\' fn];
+            fn2 = ['C:\Users\wayne\Documents\GitHub\Display-Profile\data\' fn];
 
             % load the measurement data
             load(fn2)
@@ -157,7 +160,61 @@ classdef displaysim < handle
             %
             XYZ = subpixel_r + subpixel_g + subpixel_b - 2*subpixel_black;
         end
+
+        function res = export_data_for_craig (obj)
+            r = obj.XYZ_r;
+            g = obj.XYZ_g;
+            b = obj.XYZ_b;
+            w = obj.XYZ_w;
+            rgbw = [r g b w];
+
+            rgbw18 = rgbw(1:15:256,:);
+
+            res = rgbw18;
+        end
         
+        function show_curves_tile (obj)
+            clf
+            
+            lmax = max(obj.XYZ_w(255,:))
+            
+            t = tiledlayout(2,2);
+            title(t,obj.name,'Interpreter','None')
+
+            nexttile(t,1)
+            show_curves_x1(obj.XYZ_r,'-')
+            title('Red')
+
+            nexttile(t,2)
+            show_curves_x1(obj.XYZ_g,'-')
+            title('Green')
+            
+            nexttile(t,3)
+            show_curves_x1(obj.XYZ_b,'-')
+            title('Blue')
+            
+            nexttile(t,4)
+            hold on
+            show_curves_x1(obj.XYZ_w,'-')
+            show_curves_x1(obj.XYZ_r+obj.XYZ_g+obj.XYZ_b,':')
+            title('Sum')
+            
+            return
+            
+            function show_curves_x1 (XYZ,mkr)
+                hold on
+                plot(XYZ(:,1),[mkr 'r'])
+                plot(XYZ(:,2),[mkr 'g'])
+                plot(XYZ(:,3),[mkr 'b'])
+                legend('X','Y','Z','Location','northwest')
+                xlabel('DDL')
+                ylabel('CIEXYZ')
+                axis([0 255 0 lmax])
+                axis square
+                return
+            end
+        end
+
         function show_curves (obj)
             clf
             
